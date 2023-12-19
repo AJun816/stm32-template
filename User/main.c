@@ -1,4 +1,5 @@
 #include "stm32f10x.h"                  // Device header
+#include "Delay.h"
 
 int main(void)
 {
@@ -19,11 +20,11 @@ int main(void)
 	
 	/*设置GPIO引脚的高低电平*/
 	/*若不设置GPIO引脚的电平，则在GPIO初始化为推挽输出后，指定引脚默认输出低电平*/
-//	GPIO_SetBits(GPIOC, GPIO_Pin_13);						//将PC13引脚设置为高电平
+	//GPIO_SetBits(GPIOC, GPIO_Pin_13);						//将PC13引脚设置为高电平
 	GPIO_ResetBits(GPIOC, GPIO_Pin_13);						//将PC13引脚设置为低电平
 	
 	while (1)
 	{
-		
+			
 	}
 }
